@@ -1,0 +1,22 @@
+{
+  "name": "raka2-event-service",
+  "version": "1.0.0",
+  "description": "Service to make request to Raka2 route and send visiters data",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ./src/main.js"
+  },
+  "keywords": [
+    "hackaton"
+  ],
+  "author": "Daniel Silva, Cristian Penteado, Douglas Scaini, João Marcelo e Matheus Brandalise",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "socket.io": "^2.3.0"
+  }
+}
