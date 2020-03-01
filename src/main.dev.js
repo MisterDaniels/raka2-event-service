@@ -10,11 +10,13 @@ function createPrimaryWindow() {
         height: screenDimensions.height,
         frame: false,
         webPreferences: {
-            devTools: false,
+            devTools: true
         }
     });
 
     win.loadFile('./views/index.html');
+
+    win.webContents.openDevTools();
 
     win.show();
 }

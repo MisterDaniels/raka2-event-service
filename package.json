@@ -4,7 +4,11 @@
   "description": "Service to make request to Raka2 route and send visiters data",
   "main": "index.js",
   "scripts": {
-    "start": "electron ./src/main.js"
+    "electron": "electron ",
+    "start:dev": "electron ./src/main.dev.js",
+    "start:prod": "electron ./src/main.js",
+    "deploy:win": "electron-packager ./src Expo --platform=win32 --arch=x64",
+    "deploy:all": "electron-packager ./src Expo --all"
   },
   "keywords": [
     "hackaton"
@@ -14,5 +18,8 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "electron": "^8.0.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.2.1"
   }
 }

@@ -49,6 +49,8 @@
     </div>
 
     <script>
+      let searchParams = new URLSearchParams(window.location.search);
+
       let palestra = 1;
 
       $('#cpf').mask('000.000.000-00', {reverse: true});
@@ -56,7 +58,7 @@
       $(document).keypress((event) => {
           if(event.which === 13 && $('#cpf').val().length === 14) {
               
-              axios.post(`http://localhost:5000/confirmacao/${palestra}/${$('#cpf').val()}`, {}
+              axios.post(`${searchParams.get('websiteUrl')}/confirmacao/${palestra}/${$('#cpf').val()}`, {}
               ).then((response) => {
                   if (response.data.error) {
                       $('.check-circle').show();                    
