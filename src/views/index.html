@@ -62,9 +62,7 @@
                       $('.check-circle').show();                    
                       $('.check-circle .x-circle__mark').show();
                       $(document.body).attr('failed', '');
-                      if (response.data.error === 1) {
-                          $('#message').text('Desculpe, mas parece que você não foi cadastrado nesta palestra.');
-                      }
+                      $('#message').text(response.data.error);
                   } 
                   
                   if (response.data.success) {
