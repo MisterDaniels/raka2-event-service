@@ -11,12 +11,8 @@
   ],
   "author": "Daniel Silva, Cristian Penteado, Douglas Scaini, João Marcelo e Matheus Brandalise",
   "license": "ISC",
-  "devDependencies": {
-    "electron": "^8.0.1"
-  },
   "dependencies": {
-    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "socket.io": "^2.3.0"
+    "electron": "^8.0.1"
   }
 }

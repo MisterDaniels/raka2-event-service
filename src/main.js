@@ -12,8 +12,6 @@ function createPrimaryWindow() {
 
     win.loadFile('./views/index.html');
 
-    win.webContents.openDevTools();
-
     win.show();
 }
 

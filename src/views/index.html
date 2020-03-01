@@ -71,23 +71,33 @@
                       $(document.body).attr('confirmed', '');
                       $('#message').text('Pronto, você foi confirmado! Pegue o seu certificado no site.');
                   }
+
+                  makeSystemWaitToAnotherInput();
+              }).catch((error) => {
+                  $('.check-circle').show();                    
+                  $('.check-circle .x-circle__mark').show();
+                  $(document.body).attr('failed', '');
+                  $('#message').text('Parece que o site está fora do ar!');
+
+                  makeSystemWaitToAnotherInput();
               });
 
               $('#cpf').attr('readonly', '');
-
-              setTimeout(() => {
-                  $('.check-circle').hide();
-                  $('.check-circle .x-circle__mark').hide();
-                  $('.check-circle .check-circle__mark').hide();
-                  $('#message').text('');
-                  $(document.body).removeAttr('failed');
-                  $(document.body).removeAttr('confirmed');
-                  $('#cpf').removeAttr('readonly');
-                  clearTimeout(this);
-              }, 5000)
-
               $('#cpf').val('');
-              $('#cpf').focus();
+
+              var makeSystemWaitToAnotherInput = () => {
+                  setTimeout(() => {
+                      $('.check-circle').hide();
+                      $('.check-circle .x-circle__mark').hide();
+                      $('.check-circle .check-circle__mark').hide();
+                      $('#message').text('');
+                      $(document.body).removeAttr('failed');
+                      $(document.body).removeAttr('confirmed');
+                      $('#cpf').removeAttr('readonly');
+                      $('#cpf').focus();
+                      clearTimeout(this);
+                  }, 5000);
+              }
           }
       });
 
