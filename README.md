@@ -1,5 +1,5 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6de12d9870a14da183120655032f3c2a)](https://app.codacy.com/manual/MisterDaniels/raka2-event-service?utm_source=github.com&utm_medium=referral&utm_content=MisterDaniels/raka2-event-service&utm_campaign=Badge_Grade_Dashboard)
-[![Academy Project](https://img.shields.io/badge/Academy-Project-informational.svg)](https://www.facebook.com/Curso-de-Ciência-da-Computação-470257173378377/)&nbsp;
+[![Hackathon Project](https://img.shields.io/badge/Hackathon-Project-informational.svg)](https://www.facebook.com/events/ser-brf/expo-videira-2020/124577072103521/)&nbsp;
 <h1 align="center">
   HACKATON EXPO VIDEIRA 2020
 </h1>
